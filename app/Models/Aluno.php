@@ -7,8 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Aluno extends Model
 {
     protected $fillable = ['nome','endereco','bairro','cidade',
-        'celular','datanascimento','sexo','email','cpf','rg',
-        'rne','certnascimento','docmilitar','matriculado'];
+        'celular','email'];
 
     public function rules($id = '')
     {
