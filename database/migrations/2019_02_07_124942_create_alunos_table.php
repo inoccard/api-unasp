@@ -20,7 +20,8 @@ class CreateAlunosTable extends Migration
             $table->string('bairro',100);
             $table->string('cidade',100);
             $table->string('celular',15);
-            $table->dateTime('datanascimento');
+            $table->string('email',100)->unique();
+        /*    $table->dateTime('datanascimento');
             $table->string('sexo',1);
             $table->string('email',100)->unique();
             $table->string('cpf',13);
@@ -28,7 +29,7 @@ class CreateAlunosTable extends Migration
             $table->string('rne',14);
             $table->string('certnascimento',50);
             $table->string('docmilitar',50);
-            $table->boolean('matriculado');
+            $table->boolean('matriculado'); */
             $table->timestamps();
         });
     }
